@@ -77,6 +77,6 @@ console.log("Number of times rigged occured: " + rigCount);
 
 console.log("-------------------------------------");
 
-console.log(`(Die roll [${roll2}]) + (Rigged Dice Rolls [${rigCount}]) = ` + (roll2+rigCount) );
+console.log(`(Die Roll [${roll2}]) + (Rigged Dice Rolls [${rigCount}]) = ` + (roll2+rigCount) );
 
 
