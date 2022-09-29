@@ -12,7 +12,8 @@ let roll2 = 0; // counts the occurences of actual rolls that equal inputNumber
 
 //Asks user input
 console.log("\nChoose a number between 1 - 6 that you want to rig the die with.\nThe number will appear twice as much as the others. ")
-inputNumber = prompt("Input number: ");
+inputNumber = Number(prompt("Input number: "));
+console.log(typeof inputNumber);
 console.log("-------------------------------------");
 
 
@@ -24,14 +25,8 @@ let roll = Math.floor((Math.random() * 7) + 1);
 if(roll === 7){ // turns 7 into inputNumber
     roll = inputNumber;
     console.log(x + ". Rigged Dice Roll: " + roll);
+    rigCount+=1;
 
-// code below prints each roll
-/*    
-    console.log(x + ". Dice roll: " + roll);
-
-}else{
-    console.log(x + ". Dice roll: " + roll);
-*/
 }
 else if(roll == inputNumber){
     roll2+=1;
@@ -57,10 +52,6 @@ else if(roll === 5){
 }
 else if(roll === 6){
     count6+=1;
-}
-else{
-    rigCount+=1;
-
 }
 }
 
